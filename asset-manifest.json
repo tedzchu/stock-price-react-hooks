@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/stock-price-tracker/static/css/main.41562a61.chunk.css",
-    "main.js": "/stock-price-tracker/static/js/main.d7d82f76.chunk.js",
-    "main.js.map": "/stock-price-tracker/static/js/main.d7d82f76.chunk.js.map",
-    "runtime-main.js": "/stock-price-tracker/static/js/runtime-main.6b3a7951.js",
-    "runtime-main.js.map": "/stock-price-tracker/static/js/runtime-main.6b3a7951.js.map",
-    "static/js/2.32ac4daa.chunk.js": "/stock-price-tracker/static/js/2.32ac4daa.chunk.js",
-    "static/js/2.32ac4daa.chunk.js.map": "/stock-price-tracker/static/js/2.32ac4daa.chunk.js.map",
-    "index.html": "/stock-price-tracker/index.html",
-    "precache-manifest.ec4054a1f46cccc5738a00d3002cdca3.js": "/stock-price-tracker/precache-manifest.ec4054a1f46cccc5738a00d3002cdca3.js",
-    "service-worker.js": "/stock-price-tracker/service-worker.js",
-    "static/css/main.41562a61.chunk.css.map": "/stock-price-tracker/static/css/main.41562a61.chunk.css.map",
-    "static/js/2.32ac4daa.chunk.js.LICENSE.txt": "/stock-price-tracker/static/js/2.32ac4daa.chunk.js.LICENSE.txt"
+    "main.css": "/stock-price-react-hooks/static/css/main.41562a61.chunk.css",
+    "main.js": "/stock-price-react-hooks/static/js/main.d7d82f76.chunk.js",
+    "main.js.map": "/stock-price-react-hooks/static/js/main.d7d82f76.chunk.js.map",
+    "runtime-main.js": "/stock-price-react-hooks/static/js/runtime-main.bf4c2ff2.js",
+    "runtime-main.js.map": "/stock-price-react-hooks/static/js/runtime-main.bf4c2ff2.js.map",
+    "static/js/2.32ac4daa.chunk.js": "/stock-price-react-hooks/static/js/2.32ac4daa.chunk.js",
+    "static/js/2.32ac4daa.chunk.js.map": "/stock-price-react-hooks/static/js/2.32ac4daa.chunk.js.map",
+    "index.html": "/stock-price-react-hooks/index.html",
+    "precache-manifest.9448c7768ec6ff580523bb4149d56f28.js": "/stock-price-react-hooks/precache-manifest.9448c7768ec6ff580523bb4149d56f28.js",
+    "service-worker.js": "/stock-price-react-hooks/service-worker.js",
+    "static/css/main.41562a61.chunk.css.map": "/stock-price-react-hooks/static/css/main.41562a61.chunk.css.map",
+    "static/js/2.32ac4daa.chunk.js.LICENSE.txt": "/stock-price-react-hooks/static/js/2.32ac4daa.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b3a7951.js",
+    "static/js/runtime-main.bf4c2ff2.js",
     "static/js/2.32ac4daa.chunk.js",
     "static/css/main.41562a61.chunk.css",
     "static/js/main.d7d82f76.chunk.js"
