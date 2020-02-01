@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Line chart by [Brandom Morelli](https://github.com/bmorelli25/interactive-bitcoin-price-chart/blob/master/src/LineChart.js).
+
 ## Available Scripts
 
 In the project directory, you can run:
