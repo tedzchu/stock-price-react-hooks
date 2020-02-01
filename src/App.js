@@ -15,39 +15,39 @@ function App() {
     setHoverLoc(hoverLoc);
     setActivePoint(activePoint);
   };
+
+  const setPoints = stockData => {
+    const sortedData = [];
+    let count = 29;
+    for (let date in stockData['Time Series (Daily)']) {
+      sortedData.unshift({
+        d: moment(date).format('MMM DD'),
+        p: stockData['Time Series (Daily)'][date][
+          '4. close'
+        ].toLocaleString('us-EN', { style: 'currency', currency: 'USD' }),
+        x: count, //previous days
+        y: Number(stockData['Time Series (Daily)'][date]['4. close']).toFixed(2) // numerical price
+      });
+      count -= 1;
+      if (count < 0) {
+        break;
+      }
+    }
+    setData(sortedData);
+    setFetchingData(false);
+  };
+
   useEffect(() => {
-    const getData = () => {
+    const getData = async () => {
       const url =
         'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=TSLA&apikey=[YOUR_KEY_HERE]';
-      fetch(url)
-        .then(r => r.json())
-        .then(stockData => {
-          const sortedData = [];
-          let count = 29;
-          for (let date in stockData['Time Series (Daily)']) {
-            sortedData.unshift({
-              d: moment(date).format('MMM DD'),
-              p: stockData['Time Series (Daily)'][date][
-                '4. close'
-              ].toLocaleString('us-EN', { style: 'currency', currency: 'USD' }),
-              x: count, //previous days
-              y: Number(
-                stockData['Time Series (Daily)'][date]['4. close']
-              ).toFixed(2) // numerical price
-            });
-            count -= 1;
-            if (count < 0) {
-              break;
-            }
-          }
-          setData(sortedData);
-          setFetchingData(false);
-        })
-        .catch(e => {
-          console.log(e);
-        });
+      let response = await fetch(url);
+      let data = await response.json();
+      return data;
     };
-    getData();
+    getData().then(function(data) {
+      setPoints(data);
+    });
   }, []);
   return (
     <div className='container'>
